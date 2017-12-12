@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_background"
+    tools:context="com.example.dell.dacn.activiy.LogAndReg.RegisterUser">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/info_register_appbar_User"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_header_register_user"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:navigationIcon="@drawable/back_actionbar">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Đăng Ký"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlId_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="100dp">
+
+            <com.example.dell.dacn.Front.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/icon_user"
+                android:textSize="30dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_id_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0.4dp"
+                android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etId_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="Tên tài khoản"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="07dp"
+                    android:textColor="@android:color/black"
+                    android:textColorLink="@android:color/transparent" />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/rlId_register"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/black" />
+
+        <RelativeLayout
+            android:id="@+id/rlPass_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="30dp">
+
+            <com.example.dell.dacn.Front.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/icon_pass"
+                android:textSize="30dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_pass_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0.4dp"
+                android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etPass_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="Mật khẩu"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="07dp"
+                    android:textColor="@android:color/black"
+                    android:textColorLink="@android:color/transparent" />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/rlPass_register"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/black" />
+        <RelativeLayout
+            android:id="@+id/rlPassConfirm_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="30dp">
+
+            <com.example.dell.dacn.Front.IconTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/icon_pass"
+                android:textSize="30dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_pass_comfirm_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="0.4dp"
+                android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etPassConfirm_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="Xác nhận mật khẩu"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="07dp"
+                    android:textColor="@android:color/black"
+                    android:textColorLink="@android:color/transparent" />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/rlPassConfirm_register"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/black" />
+        <Button
+            android:id="@+id/btnTiepTuc"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Tiếp tục"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/border_button"
+            android:textColor="@color/white_text"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

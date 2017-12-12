@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DACN</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="choice">Hình ảnh bạn muốn dùng?</string>
+    <string name="camera">Camera</string>
+    <string name="libary">Thư viện</string>
+    <string name="cancel">Hủy</string>
+    <string name="sign_up_select_image">Hình ảnh thư viện</string>
+</resources>

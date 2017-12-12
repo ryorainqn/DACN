@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dell.dacn">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/no_image"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/NoAction">
+        <activity
+            android:name=".activiy.MakeColor.SplashScreen"
+            android:theme="@style/NoAction">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activiy.News.MainActivity" />
+        <activity
+            android:name=".activiy.LogAndReg.LoginActivity"
+            android:theme="@style/NoAction" />
+        <activity android:name=".activiy.LogAndReg.RegisterActivity" />
+        <activity android:name=".activiy.LogAndReg.ForgotActivity" />
+        <activity android:name=".activiy.DetailNews.DetailActivity" />
+        <activity android:name=".activiy.MakeColor.IntroduceAcitivy" />
+        <activity
+            android:name=".activiy.Change.ChangeProfileActivity"
+            android:theme="@style/NoAction" />
+        <activity android:name=".activiy.Change.ChangesPasssActivity" />
+        <activity android:name=".activiy.LogAndReg.RegisterUser" />
+        <activity android:name=".activiy.News.SaveNews"/>
+        <activity android:name=".activiy.DetailNews.DetailSaveNewsActivity"></activity>
+    </application>
+
+</manifest>

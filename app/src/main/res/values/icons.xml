@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="icon_hinhtintuc">&#xf1ea;</string>
+    <string name="icon_user">&#xf007;</string>
+    <string name="icon_pass">&#xf023;</string>
+    <string name="icon_name">&#xf2bd;</string>
+    <string name="icon_tuoi">&#xf1fd;</string>
+    <string name="icon_diachi">&#xf015;</string>
+    <string name="icon_email">&#xf0e0;</string>
+    <string name="icon_camera">&#xf030;</string>
+    <string name="icon_save">&#xf02e;</string>
+    <string name="icon_passchange">&#xf13e;</string>
+    <string name="icon_intro">&#xf06a;</string>
+    <string name="icon_logout">&#xf08b;</string>
+    <string name="icon_savenews">&#xf0c7;</string>
+    <string name="icon_delete">&#xf00d;</string>
+    <string name="icon_new">&#xf1ea;</string>
+    <string name="icon_wifi">&#xf1eb;</string>
+</resources>

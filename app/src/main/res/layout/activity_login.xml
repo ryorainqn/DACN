@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.dacn.activiy.LogAndReg.LoginActivity"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_background"
+        android:padding="30dp">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logomobile" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:id="@+id/rlTaiKhoan">
+
+                <com.example.dell.dacn.Front.IconTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_user"
+                    android:textSize="30dp"
+                    android:layout_marginTop="8dp"/>
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="0.4dp"
+                    android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/etTaiKhoan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:hint="Tên tài khoản"
+                        android:paddingTop="07dp"
+                        android:textColor="@android:color/black"
+                        android:textColorLink="@android:color/transparent"
+                        android:paddingLeft="20dp"
+                        android:inputType="text"/>
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rlTaiKhoan"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/black" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlTaiKhoan"
+                android:id="@+id/rlMatkhau"
+                android:layout_marginTop="30dp">
+
+                <com.example.dell.dacn.Front.IconTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/icon_pass"
+                    android:textSize="30dp"
+                    android:layout_marginTop="8dp"/>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="0.4dp"
+                    android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/etMatKhau"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:hint="Mật khẩu"
+                        android:inputType="textPassword"
+                        android:paddingTop="07dp"
+                        android:textColor="@android:color/black"
+                        android:textColorLink="@android:color/transparent"
+                        android:paddingLeft="20dp"/>
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rlMatkhau"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/black" />
+
+            <Button
+                android:id="@+id/btnDangNhap"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="350dp"
+                android:background="@drawable/border_button"
+                android:onClick="onClick"
+                android:text="Đăng Nhập"
+                android:textColor="@color/white_text"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btnDangKy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="455dp"
+                android:onClick="onClick"
+                android:text="Đăng ký"
+                android:textColor="@color/tw__composer_blue_text"
+                android:textSize="20sp"
+                android:layout_marginLeft="30dp"
+               />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_login"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+</RelativeLayout>

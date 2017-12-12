@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue_background"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/info_user_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_header"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:navigationIcon="@drawable/back_actionbar">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Đổi thông tin cá nhân"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivChange"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/default_profile_pic" />
+
+            <RelativeLayout
+                android:id="@+id/rlTen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivChange">
+
+                <com.example.dell.dacn.Front.IconTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/icon_user"
+                    android:textSize="30dp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_inputold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="0.4dp"
+                    android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/etTen_ProfileChange"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:hint="Tên"
+                        android:inputType="text"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="07dp"
+                        android:textColor="@android:color/black"
+                        android:textColorLink="@android:color/transparent" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rlTen"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/black"
+                android:id="@+id/view" />
+
+            <com.example.dell.dacn.Front.IconTextView
+                android:id="@+id/itvCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/ivChange"
+                android:layout_alignTop="@+id/ivChange"
+                android:text="@string/icon_camera"
+                android:textSize="30sp" />
+
+
+            <com.example.dell.dacn.Front.IconTextView
+                android:id="@+id/iconTextView_Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/icon_tuoi"
+                android:textSize="25sp"
+                android:layout_alignTop="@+id/etTuoi_ProfileChange"
+                android:layout_alignStart="@+id/view" />
+
+            <TextView
+                android:id="@+id/etTuoi_ProfileChange"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/rlTen"
+                android:layout_marginTop="25dp"
+                android:inputType="text"
+                android:hint="Năm sinh"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:textSize="17sp"
+                android:layout_toEndOf="@+id/iconTextView_Date"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/tw__composer_black"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/iconTextView_Date"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/black" />
+
+
+            <RelativeLayout
+                android:id="@+id/rlDiachi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etTuoi_ProfileChange">
+
+                <com.example.dell.dacn.Front.IconTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/icon_diachi"
+                    android:textSize="30dp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_inputDiachi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="0.4dp"
+                    android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/etDiaChi_ProfileChange"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@android:color/transparent"
+                        android:backgroundTint="@android:color/transparent"
+                        android:hint="Địa chỉ"
+                        android:inputType="text"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="07dp"
+                        android:textColor="@android:color/black"
+                        android:textColorLink="@android:color/transparent" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rlDiachi"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/black" />
+
+            <RelativeLayout
+                android:id="@+id/rlEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlDiachi"
+                android:layout_marginTop="10dp">
+
+                <com.example.dell.dacn.Front.IconTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/icon_email"
+                    android:textSize="30dp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/text_inputEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="0.4dp"
+                    android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+                    app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                    <TextView
+                        android:id="@+id/etEmail_ProfileChange"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:paddingLeft="30dp"
+                        android:hint="Email"
+                        android:paddingTop="07dp"
+                        android:textColor="@android:color/black"
+                        android:textColorLink="@android:color/transparent"/>
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rlEmail"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/black" />
+
+            <Button
+                android:id="@+id/btnDTTCN_Change"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="420dp"
+                android:background="@drawable/border_button"
+                android:text="Xác nhận"
+                android:textColor="@color/white_text"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/pb_changeprofile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+</RelativeLayout>

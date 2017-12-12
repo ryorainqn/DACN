@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/info_profile_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_header_profile"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Thông tin cá nhân"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:layout_marginTop="55dp"
+        android:background="@color/blue_profile"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/default_profile_pic" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/etTen_Profile"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textSize="25dp"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="390dp"
+        android:layout_height="310dp"
+        android:layout_marginTop="330dp"
+        android:background="@color/blue_profile"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/rlLT"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:padding="5dp">
+
+            <com.example.dell.dacn.Front.IconTextView
+                android:id="@+id/itvLT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/icon_savenews"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/itvLT"
+                android:text="Tin tức đã lưu"
+                android:textColor="@color/tw__composer_black"
+                android:textSize="17dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlDMK"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:padding="5dp">
+
+            <com.example.dell.dacn.Front.IconTextView
+                android:id="@+id/itvDMK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/icon_pass"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30sp"
+                android:layout_marginLeft="13dp"
+                android:layout_toEndOf="@+id/itvDMK"
+                android:text="Đổi mật khẩu"
+                android:textColor="@color/tw__composer_black"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlGT"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:padding="5dp">
+
+            <com.example.dell.dacn.Front.IconTextView
+                android:id="@+id/itvGT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/icon_intro"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/itvGT"
+                android:text="Giới thiệu"
+                android:textColor="@color/tw__composer_black"
+                android:textSize="17dp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlDX"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:padding="5dp">
+
+            <com.example.dell.dacn.Front.IconTextView
+                android:id="@+id/itvDX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/icon_logout"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="6dp"
+                android:layout_toEndOf="@+id/itvDX"
+                android:text="Đăng xuất"
+                android:textColor="@color/tw__composer_black"
+                android:textSize="17dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
